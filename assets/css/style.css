@@ -1,5 +1,12 @@
+<<<<<<< HEAD
+.crystal {
+    width: 200px;
+    height: 200px;
+    /* float: left; */
+=======
 .crystal {
     /* width: 200px; */
     height: 200px;
     float: left;
+>>>>>>> ec47c1a00f664d19e7933d6e3ab8a5153d2025ca
 }
