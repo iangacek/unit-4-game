@@ -1,6 +1,9 @@
 $(document).ready(function(){//I need jQuery to run!
 
-    var goal, current, redNumber, purpleNumber, blueNumber, greenNumber;
+    var targetScore, current, redNumber, purpleNumber, blueNumber, greenNumber;
+
+    var wins = 0
+    var losses = 0
 
     var resetGame = function(){
         goal = Math.floor(Math.random() * 101 + 19);
@@ -18,10 +21,14 @@ $(document).ready(function(){//I need jQuery to run!
     $("#button-purple").attr('value', purpleNumber);
     $("#button-green").attr('value', greenNumber);
 
-	$('.crystal-button').click(function(){
+	$('.crystal').click(function(){
         current += parseInt($(this).attr('value'));
         console.log(current);
 
-	});
+    });
+
+    var targetScore = Math.floor(Math.random() * 120) + 19;
+        console.log(targetScore);
+        $("#targetScore").html(targetScore);
 
 });
