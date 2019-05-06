@@ -7,7 +7,7 @@ $(document).ready(function () {//I need jQuery to run!
 
     var resetGame = function () {
         current = 0;
-        targetScore = Math.floor(Math.random() * 120) + 19;
+        targetScore = Math.floor((Math.random() * 120) + 19);
         redNumber = Math.floor((Math.random() * 12) + 1);
         purpleNumber = Math.floor((Math.random() * 12) + 1);
         blueNumber = Math.floor((Math.random() * 12) + 1);
