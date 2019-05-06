@@ -8,10 +8,10 @@ $(document).ready(function(){//I need jQuery to run!
     var resetGame = function(){
         goal = Math.floor(Math.random() * 101 + 19);
         current = 0;
-        redNumber = Math.floor(Math.random()*12);
-	    purpleNumber = Math.floor(Math.random()*12);
-	    blueNumber = Math.floor(Math.random()*12);
-	    greenNumber = Math.floor(Math.random()*12);
+        redNumber = Math.floor((Math.random()*12) + 1);
+	    purpleNumber = Math.floor((Math.random()*12) +1);
+	    blueNumber = Math.floor((Math.random()*12) + 1);
+	    greenNumber = Math.floor((Math.random()*12) + 1);
         $("#button-red").attr('value', redNumber);
         $("#button-blue").attr('value', blueNumber);
         $("#button-purple").attr('value', purpleNumber);
