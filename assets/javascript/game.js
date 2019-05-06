@@ -9,6 +9,7 @@ $(document).ready(function () {//I need jQuery to run!
         current = 0;
         targetScore = Math.floor((Math.random() * 120) + 19);
         $("#targetScore").html(targetScore);
+        $("#currentScore").html(current);
         redNumber = Math.floor((Math.random() * 12) + 1);
         purpleNumber = Math.floor((Math.random() * 12) + 1);
         blueNumber = Math.floor((Math.random() * 12) + 1);
@@ -36,6 +37,7 @@ $(document).ready(function () {//I need jQuery to run!
             $("#wins").html("Wins: " + wins);
             console.log('win: ', wins);
             alert("A winner is you!");
+            $("#currentScore").html("0");
         } else if (current > targetScore) {
             // Increments losses by 1
             losses++;
@@ -45,6 +47,7 @@ $(document).ready(function () {//I need jQuery to run!
             $("#losses").html("Losses: " + losses);
             console.log('loss: ', losses);
             alert("You lose. Good day!");
+            $("#currentScore").html("0");
         }
 
     });
