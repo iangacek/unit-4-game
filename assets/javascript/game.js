@@ -24,6 +24,7 @@ $(document).ready(function(){//I need jQuery to run!
 	$('.crystal').click(function(){
         current += parseInt($(this).attr('value'));
         console.log(current);
+        $("#currentScore").html(current);
         if (current == targetScore) {
             // Increments wins by 1
             wins++;
@@ -31,10 +32,12 @@ $(document).ready(function(){//I need jQuery to run!
             // Adds an additional value to wins on HTML
             $("#wins").html("Wins: " + wins);
             console.log('win: ', wins)
+            alert("A winner is you!");
         } else if (current > targetScore) {
             // Increments losses by 1
             losses++;
             resetGame();
+            alert("You lose. Good day!");
             // Adds an additional value to losses on HTML
             $("#losses").html("Losses: " + losses);
         }
